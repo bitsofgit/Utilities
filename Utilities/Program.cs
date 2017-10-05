@@ -39,7 +39,8 @@ namespace Utilities
                     YieldExample.Menu,
                     MyExtensions.Menu,
                     CustomIteration.Menu,
-                    TupleExample.Menu
+                    TupleExample.Menu,
+                    Encodings.Run
                 };
 
                 Dictionary<int, Action> dict = BuildMenu(list);

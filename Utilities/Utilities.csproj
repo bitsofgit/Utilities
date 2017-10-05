@@ -48,6 +48,7 @@
     <Compile Include="Anagram.cs" />
     <Compile Include="CustomIteration.cs" />
     <Compile Include="Emailer.cs" />
+    <Compile Include="Encodings.cs" />
     <Compile Include="MyExtensions.cs" />
     <Compile Include="PerfCounters.cs" />
     <Compile Include="ProcessorBitness.cs" />
