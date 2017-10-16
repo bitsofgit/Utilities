@@ -40,7 +40,8 @@ namespace Utilities
                     MyExtensions.Menu,
                     CustomIteration.Menu,
                     TupleExample.Menu,
-                    Encodings.Run
+                    Encodings.Run,
+                    TestConsole.Test
                 };
 
                 Dictionary<int, Action> dict = BuildMenu(list);
