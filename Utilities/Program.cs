@@ -41,7 +41,8 @@ namespace Utilities
                     CustomIteration.Menu,
                     TupleExample.Menu,
                     Encodings.Run,
-                    TestConsole.Test
+                    HR_Algo_Warmup.Test,
+                    HR_Algo_Implementation.Test
                 };
 
                 Dictionary<int, Action> dict = BuildMenu(list);
