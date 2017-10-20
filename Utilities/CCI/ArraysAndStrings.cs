@@ -10,7 +10,41 @@ namespace Utilities.CCI
     {
         public static void Test()
         {
-            Test1();
+            //Test1();
+            //Test2();
+            Test3();
+        }
+
+        private static void Test3()
+        {
+            // Given 2 strings write a method to see if one is a permutation or other
+            // assume ascii and character insensitive and spaces are important
+            string s1 = Console.ReadLine();
+            string s2 = Console.ReadLine();
+            Console.WriteLine(ArePermutedStrings(s1, s2));
+
+
+        }
+
+        private static bool ArePermutedStrings(string s1, string s2)
+        {
+            // permutation: same length, same characters different order
+            if (s1.Length != s2.Length)
+                return false;
+
+            if (string.IsNullOrEmpty(s1) || string.IsNullOrEmpty(s2))
+                return false;
+
+            string sortedS1 = String.Concat(s1.OrderBy(c => c));
+            string sortedS2 = String.Concat(s2.OrderBy(c => c));
+
+            return sortedS1.ToUpper() == sortedS2.ToUpper();
+        }
+
+        private static void Test2()
+        {
+            string s = Console.ReadLine();
+            Console.WriteLine(s.Reverse());
         }
 
         private static void Test1()
