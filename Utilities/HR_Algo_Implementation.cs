@@ -10,7 +10,66 @@ namespace Utilities
     {
         public static void Test()
         {
-            GradingStudents();
+            //GradingStudents();
+            AppleAndOrange();
+        }
+
+        private static void AppleAndOrange()
+        {
+            string[] tokens_s = Console.ReadLine().Split(' ');
+            int s = Convert.ToInt32(tokens_s[0]);
+            int t = Convert.ToInt32(tokens_s[1]);
+            string[] tokens_a = Console.ReadLine().Split(' ');
+            int a = Convert.ToInt32(tokens_a[0]);
+            int b = Convert.ToInt32(tokens_a[1]);
+            string[] tokens_m = Console.ReadLine().Split(' ');
+            int m = Convert.ToInt32(tokens_m[0]);
+            int n = Convert.ToInt32(tokens_m[1]);
+            string[] apple_temp = Console.ReadLine().Split(' ');
+            int[] apple = Array.ConvertAll(apple_temp, Int32.Parse);
+            string[] orange_temp = Console.ReadLine().Split(' ');
+            int[] orange = Array.ConvertAll(orange_temp, Int32.Parse);
+
+            if (s < 1 || s > 100000 || t < 1 || t > 100000 || a < 1 || a > 100000 || b < 1 || b > 100000 || m < 1 || m > 100000 || n < 1 || n > 100000)
+                throw new Exception("Invalid arguments passed. No value can be less than 1 or greater than 100000.");
+
+            if (a > s || a > t || a >b)
+                throw new Exception("invalid argument");
+
+            if (s > t || s > b)
+                throw new Exception("invalid argument");
+
+            if (t > b)
+                throw new Exception("invalid argument");
+
+            int appleCount = 0;
+            int orangeCount = 0;
+
+            foreach(var d in apple)
+            {
+                if (d < -100000 || d > 100000)
+                    throw new Exception("invalid argument");
+
+                int pos = a + d;
+                
+                if (pos >= s && pos <= t)
+                    appleCount++;
+
+            }
+
+            foreach (var d in orange)
+            {
+                if (d < -100000 || d > 100000)
+                    throw new Exception("invalid argument");
+
+                int pos = b + d;
+
+                if (pos >= s && pos <= t)
+                    orangeCount++;
+            }
+
+            Console.WriteLine(appleCount);
+            Console.WriteLine(orangeCount);
 
         }
 

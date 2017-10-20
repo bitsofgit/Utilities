@@ -42,7 +42,9 @@ namespace Utilities
                     TupleExample.Menu,
                     Encodings.Run,
                     HR_Algo_Warmup.Test,
-                    HR_Algo_Implementation.Test
+                    HR_Algo_Implementation.Test,
+                    HR_Algo_Strings.Test,
+                    CCI.ArraysAndStrings.Test
                 };
 
                 Dictionary<int, Action> dict = BuildMenu(list);

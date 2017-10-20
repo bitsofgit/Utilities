@@ -46,10 +46,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Anagram.cs" />
+    <Compile Include="CCI\ArraysAndStrings.cs" />
     <Compile Include="CustomIteration.cs" />
     <Compile Include="Emailer.cs" />
     <Compile Include="Encodings.cs" />
     <Compile Include="HR_Algo_Implementation.cs" />
+    <Compile Include="HR_Algo_Strings.cs" />
     <Compile Include="MyExtensions.cs" />
     <Compile Include="PerfCounters.cs" />
     <Compile Include="ProcessorBitness.cs" />
