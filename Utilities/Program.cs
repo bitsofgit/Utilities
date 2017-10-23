@@ -79,7 +79,7 @@ namespace Utilities
             Console.WriteLine("---------------------------");
             foreach (var kvp in dict)
             {
-                Console.WriteLine(kvp.Key + ". " + kvp.Value.Method.DeclaringType.Name + "." + kvp.Value.Method.Name);
+                Console.WriteLine(kvp.Key + ". " + kvp.Value.Method.DeclaringType.FullName + "." + kvp.Value.Method.Name);
             }
             Console.WriteLine("---------------------------");
             Console.WriteLine("Please select an option");

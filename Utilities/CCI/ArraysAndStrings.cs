@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace Utilities.CCI
 {
@@ -12,7 +13,61 @@ namespace Utilities.CCI
         {
             //Test1();
             //Test2();
-            Test3();
+            //Test3();
+            //Test4();
+            Test5();
+        }
+
+        private static void Test5()
+        {
+            // compress strings for ex. aabccccaaa would become a2b1c4a3
+            // if no compression return original
+            string s = Console.ReadLine();
+            if (string.IsNullOrEmpty(s))
+            {
+                Console.WriteLine("Empty string.");
+                return;
+            }
+
+            var compressedString = new StringBuilder();
+            int length = s.Length;
+            for (int i = 0; i < length; i++)
+            {
+                char c = s[i];
+                int count = 1;
+                int j = 0;
+                for (j = i+1; j < length; j++)
+                {
+                    if (c == s[j])
+                    {
+                        count++;
+                        i++;
+                    }
+                    else
+                        break;
+                }
+                compressedString.Append(c.ToString() + count);
+            }
+
+            if (compressedString.ToString().Length >= length)
+                Console.WriteLine(s);
+            else
+                Console.WriteLine(compressedString.ToString());
+        }
+
+        private static void Test4()
+        {
+            // method to replace all space in a string with %20
+            string s = Console.ReadLine();
+            if (string.IsNullOrEmpty(s))
+            {
+                Console.WriteLine("Empty string.");
+                return;
+            }
+
+            var replacedStr = s.Replace(" ", "%20");
+
+            Console.WriteLine(replacedStr);
         }
 
         private static void Test3()
@@ -22,8 +77,6 @@ namespace Utilities.CCI
             string s1 = Console.ReadLine();
             string s2 = Console.ReadLine();
             Console.WriteLine(ArePermutedStrings(s1, s2));
-
-
         }
 
         private static bool ArePermutedStrings(string s1, string s2)

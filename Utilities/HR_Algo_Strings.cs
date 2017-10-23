@@ -11,7 +11,27 @@ namespace Utilities
         static string result = string.Empty;
         public static void Test()
         {
-            SuperReducedString();
+            //SuperReducedString();
+            camelCase();
+        }
+
+        private static void camelCase()
+        {
+            string s = Console.ReadLine();
+            
+            if (string.IsNullOrWhiteSpace(s) || s.Length > 100000)
+                throw new Exception("Invalid argument");
+
+            int countOfWords = 1;
+
+            var arr = s.ToCharArray();
+            foreach(var c in arr)
+            {
+                if (char.IsUpper(c))
+                    countOfWords++;
+            }
+
+            Console.WriteLine(countOfWords);
         }
 
         private static void SuperReducedString()
