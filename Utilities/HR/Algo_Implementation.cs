@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Utilities
+namespace Utilities.HR
 {
-    public class HR_Algo_Implementation
+    public class Algo_Implementation
     {
         public static void Test()
         {

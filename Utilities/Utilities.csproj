@@ -51,8 +51,9 @@
     <Compile Include="CustomIteration.cs" />
     <Compile Include="Emailer.cs" />
     <Compile Include="Encodings.cs" />
-    <Compile Include="HR_Algo_Implementation.cs" />
-    <Compile Include="HR_Algo_Strings.cs" />
+    <Compile Include="HR\Algo_Implementation.cs" />
+    <Compile Include="HR\Algo_Sorting.cs" />
+    <Compile Include="HR\Algo_Strings.cs" />
     <Compile Include="MyExtensions.cs" />
     <Compile Include="PerfCounters.cs" />
     <Compile Include="ProcessorBitness.cs" />
@@ -67,7 +68,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sets.cs" />
     <Compile Include="Sorter.cs" />
-    <Compile Include="HR_Algo_Warmup.cs" />
+    <Compile Include="HR\Algo_Warmup.cs" />
     <Compile Include="TupleExample.cs" />
     <Compile Include="YieldExample.cs" />
   </ItemGroup>

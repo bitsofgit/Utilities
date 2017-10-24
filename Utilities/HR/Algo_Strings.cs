@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Utilities
+namespace Utilities.HR
 {
-    public static class HR_Algo_Strings
+    public static class Algo_Strings
     {
         static string result = string.Empty;
         public static void Test()

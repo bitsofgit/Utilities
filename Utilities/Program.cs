@@ -41,9 +41,10 @@ namespace Utilities
                     CustomIteration.Menu,
                     TupleExample.Menu,
                     Encodings.Run,
-                    HR_Algo_Warmup.Test,
-                    HR_Algo_Implementation.Test,
-                    HR_Algo_Strings.Test,
+                    HR.Algo_Warmup.Test,
+                    HR.Algo_Implementation.Test,
+                    HR.Algo_Strings.Test,
+                    HR.Algo_Sorting.Test,
                     CCI.ArraysAndStrings.Test
                 };
 
