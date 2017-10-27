@@ -51,7 +51,9 @@
     <Compile Include="CustomIteration.cs" />
     <Compile Include="Emailer.cs" />
     <Compile Include="Encodings.cs" />
+    <Compile Include="HR\Algo_Greedy.cs" />
     <Compile Include="HR\Algo_Implementation.cs" />
+    <Compile Include="HR\Algo_Search.cs" />
     <Compile Include="HR\Algo_Sorting.cs" />
     <Compile Include="HR\Algo_Strings.cs" />
     <Compile Include="MyExtensions.cs" />
