@@ -47,7 +47,9 @@ namespace Utilities
                     HR.Algo_Sorting.Test,
                     HR.Algo_Search.Test,
                     HR.Algo_Greedy.Test,
+                    HR.Algo_BitManipulation.Test,
                     CCI.ArraysAndStrings.Test,
+                    CCI.StackAndQueues.Test
                 };
 
                 Dictionary<int, Action> dict = BuildMenu(list);

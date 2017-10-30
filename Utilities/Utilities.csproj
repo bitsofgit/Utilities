@@ -48,9 +48,11 @@
   <ItemGroup>
     <Compile Include="Anagram.cs" />
     <Compile Include="CCI\ArraysAndStrings.cs" />
+    <Compile Include="CCI\StackAndQueues.cs" />
     <Compile Include="CustomIteration.cs" />
     <Compile Include="Emailer.cs" />
     <Compile Include="Encodings.cs" />
+    <Compile Include="HR\Algo_BitManipulation.cs" />
     <Compile Include="HR\Algo_Greedy.cs" />
     <Compile Include="HR\Algo_Implementation.cs" />
     <Compile Include="HR\Algo_Search.cs" />
