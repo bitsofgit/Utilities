@@ -10,7 +10,29 @@ namespace Utilities.HR
     {
         public static void Test()
         {
-            LonelyInteger();
+            //LonelyInteger();
+            MaximizingXOR();
+        }
+
+        private static void MaximizingXOR()
+        {
+            int res = 0;
+            int _l;
+            _l = Convert.ToInt32(Console.ReadLine());
+
+            int _r;
+            _r = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = _l; i <= _r; i++)
+            {
+                for(int j = _l + 1; j <= _r; j++)
+                {
+                    int xor = i ^ j;
+                    if (xor > res)
+                        res = xor;
+                }
+            }
+            Console.WriteLine(res);
         }
 
         private static void LonelyInteger()
