@@ -55,6 +55,7 @@
     <Compile Include="HR\Algo_BitManipulation.cs" />
     <Compile Include="HR\Algo_Greedy.cs" />
     <Compile Include="HR\Algo_Implementation.cs" />
+    <Compile Include="HR\Algo_Recursion.cs" />
     <Compile Include="HR\Algo_Search.cs" />
     <Compile Include="HR\Algo_Sorting.cs" />
     <Compile Include="HR\Algo_Strings.cs" />

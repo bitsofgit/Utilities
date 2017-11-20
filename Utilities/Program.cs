@@ -48,6 +48,7 @@ namespace Utilities
                     HR.Algo_Search.Test,
                     HR.Algo_Greedy.Test,
                     HR.Algo_BitManipulation.Test,
+                    HR.Algo_Recursion.Test,
                     CCI.ArraysAndStrings.Test,
                     CCI.StackAndQueues.Test
                 };
