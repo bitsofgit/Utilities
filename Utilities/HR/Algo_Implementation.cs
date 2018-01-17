@@ -11,7 +11,42 @@ namespace Utilities.HR
         public static void Test()
         {
             //GradingStudents();
-            AppleAndOrange();
+            //AppleAndOrange();
+            BreakingTheRecords();
+        }
+
+        private static void BreakingTheRecords()
+        {
+            int n = Convert.ToInt32(Console.ReadLine());
+            string[] score_temp = Console.ReadLine().Split(' ');
+            int[] score = Array.ConvertAll(score_temp, Int32.Parse);
+            int[] result = breakingRecords(score);
+            Console.WriteLine(String.Join(" ", result));
+        }
+
+        private static int[] breakingRecords(int[] score)
+        {
+            int lowest = score[0];
+            int highest = score[0];
+            int lowestCount = 0;
+            int highestCount = 0;
+
+            foreach(int i in score)
+            {
+                if(lowest < i)
+                {
+                    lowest = i;
+                    lowestCount++;
+                }
+
+                if(highest > i)
+                {
+                    highest = i;
+                    highestCount++;
+                }
+            }
+
+            return new int[] { lowestCount, highestCount };
         }
 
         private static void AppleAndOrange()

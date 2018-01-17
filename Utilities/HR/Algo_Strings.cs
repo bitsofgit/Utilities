@@ -12,7 +12,47 @@ namespace Utilities.HR
         public static void Test()
         {
             //SuperReducedString();
-            camelCase();
+            //camelCase();
+            //TwoCharacters(); --not completed yet
+        }
+
+        private static void TwoCharacters()
+        {
+            int len = Convert.ToInt32(Console.ReadLine());
+            string s = Console.ReadLine();
+            if (len != s.Length)
+                throw new Exception("invalid argument");
+
+
+        }
+
+        private static List<string> UniqueCharacters(string s)
+        {
+            if (string.IsNullOrEmpty(s))
+                return new List<string>();
+
+            List<string> uniques = new List<string>();
+            for(int i = 0; i < s.Length; i++)
+            {
+                string c = s[i].ToString();
+                if (!uniques.Contains(c))
+                    uniques.Add(c);
+            }
+            return uniques;
+        }
+
+        private static bool IsValidString(string s)
+        {
+            var list = UniqueCharacters(s);
+            if (list.Count != 2)
+                return false;
+
+            var first = list[0];
+            var second = list[1];
+            if (first == second)
+                return false;
+
+            return true;
         }
 
         private static void camelCase()
